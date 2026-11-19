@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Farida Rizki — Visual Designer, UI Designer, Creative</title>
+<meta name="description" content="Portfolio of Farida Rizki, a Jakarta-based visual and UI designer. Microsites, dashboards, games, widgets, advertising, social media, presentations, illustration and photography, 2019–2024.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Farida Rizki, back to top">Farida<span>Rizki</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" class="site-nav">
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#contents">Work</a>
+    <a href="#contact" class="nav-cta">Let’s talk</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero snap" id="top" aria-label="Introduction">
+  <canvas id="ballpit" aria-hidden="true"></canvas>
+  <div class="hero-orb" aria-hidden="true"></div>
+
+  <div class="hero-copy">
+    <p class="hi" aria-hidden="true">Hi,</p>
+    <h1><span class="its">it’s me</span> <span class="name">Farida Rizki</span></h1>
+    <p class="roles">Visual Designer / UI Designer / Creative</p>
+    <p class="years">2019 – 2024</p>
+    <div class="hero-actions">
+      <a class="btn" href="#contents">See my work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="cat-stage" aria-hidden="true">
+    <svg class="ball-label" viewBox="0 0 200 200">
+      <defs><path id="labelArc" d="M100,100 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0"/></defs>
+      <text><textPath href="#labelArc" startOffset="2%">A Portfolio</textPath></text>
+    </svg>
+
+    <svg class="cat" viewBox="40 230 680 1120">
+      <defs>
+        <radialGradient id="catSclera" cx="45%" cy="58%" r="62%">
+          <stop offset="0" stop-color="#F6F1EC"/><stop offset=".6" stop-color="#E6DBD3"/><stop offset="1" stop-color="#B8968A"/>
+        </radialGradient>
+        <linearGradient id="catLidShade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4a2414" stop-opacity=".6"/><stop offset=".32" stop-color="#4a2414" stop-opacity="0"/>
+          <stop offset=".85" stop-color="#4a2414" stop-opacity="0"/><stop offset="1" stop-color="#4a2414" stop-opacity=".25"/>
+        </linearGradient>
+        <filter id="catSoft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+        <image id="catIris" href="assets/img/cat-iris.png" x="-31" y="-31" width="62" height="62"/>
+        <clipPath id="catEyeL"><ellipse cx="240" cy="581" rx="36" ry="31" transform="rotate(-25 240 581)"/></clipPath>
+        <clipPath id="catLidClipL"><rect class="lid" x="173" y="523" width="131" height="0" data-h="109"/></clipPath>
+        <clipPath id="catEyeR"><ellipse cx="391" cy="542" rx="33" ry="29" transform="rotate(-12 391 542)"/></clipPath>
+        <clipPath id="catLidClipR"><rect class="lid" x="335" y="483" width="119" height="0" data-h="104"/></clipPath>
+      </defs>
+      <g class="cat-body">
+        <image href="assets/img/cat-base.webp" x="0" y="0" width="752" height="1404"/>
+        <g clip-path="url(#catEyeL)">
+          <ellipse cx="240" cy="581" rx="38" ry="33" transform="rotate(-25 240 581)" fill="url(#catSclera)"/>
+          <use class="iris" href="#catIris" x="246" y="582" data-x="246" data-y="582"/>
+          <ellipse cx="240" cy="581" rx="38" ry="33" transform="rotate(-25 240 581)" fill="url(#catLidShade)"/>
+          <ellipse cx="240" cy="581" rx="36" ry="31" transform="rotate(-25 240 581)" fill="none" stroke="#3a1c10" stroke-opacity=".55" stroke-width="5" filter="url(#catSoft)"/>
+        </g>
+        <g clip-path="url(#catEyeR)">
+          <ellipse cx="391" cy="542" rx="35" ry="31" transform="rotate(-12 391 542)" fill="url(#catSclera)"/>
+          <use class="iris" href="#catIris" x="386" y="545" data-x="386" data-y="545"/>
+          <ellipse cx="391" cy="542" rx="35" ry="31" transform="rotate(-12 391 542)" fill="url(#catLidShade)"/>
+          <ellipse cx="391" cy="542" rx="33" ry="29" transform="rotate(-12 391 542)" fill="none" stroke="#3a1c10" stroke-opacity=".55" stroke-width="5" filter="url(#catSoft)"/>
+        </g>
+        <image href="assets/img/cat-catchlight.png" x="190" y="505" width="250" height="125"/>
+        <image href="assets/img/cat-lid-left.png" x="173" y="523" width="131" height="109" clip-path="url(#catLidClipL)"/>
+        <image href="assets/img/cat-lid-right.png" x="335" y="483" width="119" height="104" clip-path="url(#catLidClipR)"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-foot">
+    <p class="hero-hint"><span class="hint-long">Drag the balls, push them with your cursor, or click anywhere to drop a new one.</span><span class="hint-short">Drag the balls, or tap to drop one.</span></p>
+    <button class="drop-btn" type="button" id="dropBall">Drop a ball</button>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote snap page" aria-label="A guiding quote">
+  <span class="deco deco-q" aria-hidden="true"></span>
+  <blockquote>
+    <p>Have the courage to follow your heart and intuition.</p>
+    <footer>Steve Jobs</footer>
+  </blockquote>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about snap page" id="about" aria-labelledby="about-title">
+  <span class="deco deco-a" aria-hidden="true"></span>
+  <span class="deco deco-b" aria-hidden="true"></span>
+  <div class="about-sun">
+    <div class="about-photo">
+      <img src="assets/img/farida.png" alt="Portrait of Farida Rizki, smiling, wearing a beige hijab" width="277" height="277">
+    </div>
+    <h2 id="about-title">Why me?</h2>
+    <p>As a designer with over four years of experience, I’m passionate about bringing stories to life through design that not only looks great but truly connects with people. My journey began with a bachelor’s degree in Marine Science and Technology, where I developed strong analytical skills. With all of those skills together, I always aim to communicate a message effectively.</p>
+    <p>I believe design has the power to connect people and inspire action, and I strive to use this in every project I work on. I’ve had the privilege of working with various companies, designing projects that range from digital marketing campaigns to product interface design. This portfolio shows my dedication to creating impactful, meaningful designs.</p>
+    <p>I’m constantly learning and evolving as a designer, and I’m eager to bring my creativity and passion to your team, crafting designs that focus on user-centered experiences.</p>
+  </div>
+  <ul class="contact-line">
+    <li><a href="tel:+628118607996">+62 811 8607 996</a></li>
+    <li><a href="mailto:faridarizkirambe@gmail.com">faridarizkirambe@gmail.com</a></li>
+    <li><a href="https://friziiroots.wordpress.com" target="_blank" rel="noopener">friziiroots.wordpress.com</a></li>
+    <li>Jakarta, Indonesia</li>
+  </ul>
+</section>
+
+<!-- ============ CV ============ -->
+<section class="cv wrap snap page" id="cv" aria-labelledby="cv-title">
+  <p class="kicker">Curriculum vitae</p>
+  <div class="cv-grid">
+    <div class="cv-main">
+      <h2 id="cv-title">Working experience</h2>
+      <ol class="jobs">
+        <li id="job-kompas">
+          <h3><span class="co">Kompas Group</span> <em>Designer</em></h3>
+          <p class="when">Full time, April 2023 – present</p>
+          <ul>
+            <li>Support visual design for marketing products at KG Media in the pre-sales process, such as widgets, websites and gamification.</li>
+            <li>Create visuals for creative advertising products on digital media across KG Media.</li>
+            <li>Coordinate with product, front-end developer, marcom and new media ads teams.</li>
+          </ul>
+        </li>
+        <li id="job-mastering">
+          <h3><span class="co">Mastering Skill</span> <em>Teaching Assistant</em></h3>
+          <p class="when">Freelance, May 2023 – August 2024</p>
+          <p>Hosted the Prakerja class “Teknik Desain Grafis Materi Presentasi dengan PowerPoint” and assisted the teacher during the class.</p>
+        </li>
+        <li id="job-kitabisa">
+          <h3><span class="co">Kitabisa.com</span> <em>Visual Designer</em></h3>
+          <p class="when">Full time, August 2020 – March 2023</p>
+          <ul>
+            <li>Created visuals for digital ads, app banners, infographics and other campaign or team needs, based on data and trends.</li>
+            <li>Analyzed and visualized data to improve designs with a market-oriented approach.</li>
+          </ul>
+        </li>
+        <li id="job-pawoon">
+          <h3><span class="co">Pawoon</span> <em>Graphic Designer</em></h3>
+          <p class="when">Freelance, March 2020 – April 2021</p>
+          <p>Created visual concepts and designs for company needs (company profile, hiring posters), social media, e-mail marketing, animation assets and other marketing needs (campaigns, brochures, digital ads, notifications, vouchers), plus visual assets for the website.</p>
+        </li>
+        <li id="job-99robots">
+          <h3><span class="co">99 Robots, LLC</span> <em>Designer</em></h3>
+          <p class="when">Freelance, September 2020 – March 2021</p>
+          <p>Researched clients’ visual needs, then designed and produced social media posts with image copy for multiple clients. Also concepted and designed digital and print ads for multiple clients.</p>
+        </li>
+        <li id="job-foodia">
+          <h3><span class="co">Foodia.com, part of Pawoon Group</span> <em>Graphic Designer</em></h3>
+          <p class="when">Full time, December 2019 – July 2020</p>
+          <p>Designed campaigns and promotions for all of Foodia.com’s needs. Worked with other teams to create product promotions and took part in marketing strategy.</p>
+        </li>
+        <li id="job-freelance">
+          <h3><span class="co">Project Freelance</span> <em>Layouter, Graphic Designer, Photographer</em></h3>
+          <p class="when">Part time, October 2018 – July 2021</p>
+        </li>
+        <li id="job-lapan">
+          <h3><span class="co">National Institute of Aeronautics and Space (LAPAN)</span> <em>Internship</em></h3>
+          <p class="when">August – September 2019</p>
+        </li>
+      </ol>
+
+      <h2>Training and license</h2>
+      <dl class="training">
+        <div><dt>Jul 2024</dt><dd>AI in Digital Marketing with Belajarlagi in @america Academy</dd></div>
+        <div><dt>Apr 2023</dt><dd>Build a Marketing Campaign with Dentsu Indonesia x DNVB</dd></div>
+        <div><dt>Nov 2022</dt><dd>Mastering 3D Design with Blender in Rubrik Grafis</dd></div>
+        <div><dt>Dec 2021</dt><dd>UI/UX &amp; Product Manager in Hari Senin Millenial School</dd></div>
+        <div><dt>Dec 2021</dt><dd>UI/UX Design by California Institute of the Arts on Coursera</dd></div>
+        <div><dt>Sep 2021</dt><dd>Two Star Scuba Diver by POSSI CMAS</dd></div>
+      </dl>
+    </div>
+
+    <aside class="cv-side">
+      <h2>Education</h2>
+      <p class="when">2015 – 2019</p>
+      <p>Bachelor’s degree in Marine Science and Technology, IPB University</p>
+
+      <h2>Software</h2>
+      <ul class="cols">
+        <li>Photoshop</li><li>Figma</li><li>InDesign</li><li>Premiere</li>
+        <li>Illustrator</li><li>CapCut</li><li>Canva</li><li>MS Office</li>
+      </ul>
+
+      <h2>Soft skills</h2>
+      <ul class="cols">
+        <li>Positive work ethic</li><li>Teamwork</li><li>Time management</li><li>Flexible</li>
+        <li>Eager to learn</li><li>Listener</li><li>Exploration</li>
+      </ul>
+
+      <h2>Language</h2>
+      <ul class="plain">
+        <li>Indonesian, native</li>
+        <li>English, intermediate</li>
+      </ul>
+
+      <h2>Achievements and publications</h2>
+      <ul class="plain spaced">
+        <li>Finalist, Global Youth Video Competition on Climate Change, 2017 &amp; 2019</li>
+        <li>Finalist, World Youth Essay Competition, 2018</li>
+        <li>Part of the writing team for <cite>Pemetaan Ekosistem Terumbu Karang di Pesisir Timur Kei Besar</cite>, 2020</li>
+        <li><cite>Kekayaan Tersembunyi Bahari Kei</cite>, 2020</li>
+        <li><cite>Biodiversitas Laut Misool Raja Ampat</cite>, 2021</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ TABLE OF CONTENT ============ -->
+<section class="toc snap page" id="contents" aria-labelledby="toc-title">
+  <span class="deco deco-c" aria-hidden="true"></span>
+  <div class="wrap toc-inner">
+    <h2 id="toc-title">Table of content.</h2>
+    <div class="toc-group">
+      <h3>User Interface Design</h3>
+      <ul>
+        <li><a href="#microsite"><span>microsite &amp; website</span></a></li>
+        <li><a href="#dashboard"><span>dashboard</span></a></li>
+        <li><a href="#game-app"><span>game &amp; app</span></a></li>
+        <li><a href="#widget"><span>widget</span></a></li>
+      </ul>
+    </div>
+    <div class="toc-group">
+      <h3><em>Branding &amp; Promotional Design</em></h3>
+      <ul>
+        <li><a href="#advertising"><span>advertising</span></a></li>
+        <li><a href="#social"><span>social media</span></a></li>
+        <li><a href="#presentation"><span>presentation</span></a></li>
+      </ul>
+    </div>
+    <div class="toc-group">
+      <h3><em>Others</em></h3>
+      <ul>
+        <li><a href="#illustration"><span>3d &amp; illustration</span></a></li>
+        <li><a href="#photo-video"><span>photo &amp; video</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USER INTERFACE DESIGN ============ -->
+<section class="chapter" id="ui" aria-labelledby="ui-title">
+  <header class="chapter-head wrap snap page">
+    <h2 id="ui-title">User Interface Design</h2>
+    <p>Microsites, websites, dashboards, games, apps and widgets.</p>
+    <ul class="chapter-links"><li><a href="#microsite">Microsite &amp; website</a></li><li><a href="#dashboard">Dashboard</a></li><li><a href="#game-app">Game &amp; app</a></li><li><a href="#widget">Widget</a></li></ul>
+  </header>
+
+  <!-- Microsite & website -->
+  <div class="sub" id="microsite">
+    <h3 class="sub-title visually-hidden">Microsite &amp; website</h3>
+
+    <article class="case snap page" style="--tint:#A9B8A7">
+      <div class="case-main">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#microsite">Microsite</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Visual Interaktif Kompas</a> <i aria-hidden="true">/</i> <span>Ekspedisi Krayan</span></nav>
+        <figure class="device"><img src="assets/img/krayan-device.jpg" alt="Ekspedisi Krayan microsite on a laptop and a phone: dark green page titled Menjadi Indonesia, Menjadi Krayan with a pineapple illustration" width="990" height="502" loading="lazy" data-zoom></figure>
+        <h4>The concept</h4>
+        <p>This interactive UI takes users on a journey along the road to the expedition in Krayan, where they make choices, unlock information and progress through milestones. It engages users with dynamic content and a sense of exploration, making complex topics easier to navigate in a fun, game-like experience.</p>
+      </div>
+      <div class="case-panel">
+        <div class="scroll-frame" tabindex="0" aria-label="Full page preview. Hover or focus to scroll.">
+          <img src="assets/img/krayan-full.jpg" alt="Full-length Krayan page: a road winding through choices and milestones" width="750" height="2040" loading="lazy" data-zoom>
+        </div>
+      </div>
+    </article>
+
+    <article class="case snap page" style="--tint:#B6CDD2">
+      <div class="case-main">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#microsite">Microsite</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas.com</a> <i aria-hidden="true">/</i> <span>GIIAS 2024</span></nav>
+        <figure class="device"><img src="assets/img/giias-device.jpg" alt="Kompas.com GIIAS 2024 special coverage on laptop and phone, with a car news carousel and a car buying widget" width="990" height="502" loading="lazy" data-zoom></figure>
+        <h4>The concept</h4>
+        <p>A one-stop design of “Liputan Khusus GIIAS 2024” for an automotive event, with a media-rich layout and trending news. It uses carousels, quick links and engaging games to boost interaction while keeping a clean, organized structure for easy navigation through event content, videos and buying guides.</p>
+      </div>
+      <div class="case-panel">
+        <div class="scroll-frame" tabindex="0" aria-label="Full page preview. Hover or focus to scroll.">
+          <img src="assets/img/giias-full.jpg" alt="Full-length GIIAS 2024 page with news, gamification and footer" width="750" height="1503" loading="lazy" data-zoom>
+        </div>
+      </div>
+    </article>
+
+    <article class="case snap page" style="--tint:#B0BED7">
+      <div class="case-main">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#microsite">Microsite</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas.com</a> <i aria-hidden="true">/</i> <span>Ramadhan 2024</span></nav>
+        <figure class="device"><img src="assets/img/ramadhan-device.jpg" alt="Kompas.com Ramadhan 2024 section on laptop and phone, navy page with a Ramadhan playlist and crescent moon" width="990" height="502" loading="lazy" data-zoom></figure>
+        <h4>The concept</h4>
+        <p>This UI for Kompas.com’s Ramadhan section creates a vibrant, user-friendly experience that captures the festive spirit. It gives easy access to key content like playlists, articles, donations and tools such as a zakat calculator. Interactive elements like gamification make it both fun and informative during Ramadhan.</p>
+      </div>
+      <div class="case-panel">
+        <div class="scroll-frame" tabindex="0" aria-label="Full page preview. Hover or focus to scroll.">
+          <img src="assets/img/ramadhan-full.jpg" alt="Full-length Ramadhan 2024 page with playlist, journal, donations and city stories" width="750" height="2040" loading="lazy" data-zoom>
+        </div>
+      </div>
+    </article>
+
+    <article class="case snap page" style="--tint:#EBC0B8">
+      <div class="case-main">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#microsite">Microsite</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">National Geographic Indonesia</a> <i aria-hidden="true">/</i> <span>Festival Lestari</span></nav>
+        <figure class="device"><img src="assets/img/lestari-device.jpg" alt="Festival Lestari 5 Kabupaten Sigi microsite on laptop and phone, with a crowd in colourful traditional dress" width="990" height="502" loading="lazy" data-zoom></figure>
+        <h4>The concept</h4>
+        <p>The UI for the Festival Lestari event by National Geographic Indonesia. Vibrant colours and nature-inspired imagery create an appealing, inviting interface. The game section encourages users to learn more about sustainable commodities, highlighting the event’s commitment to environmental preservation.</p>
+      </div>
+      <div class="case-panel">
+        <div class="scroll-frame" tabindex="0" aria-label="Full page preview. Hover or focus to scroll.">
+          <img src="assets/img/lestari-full.jpg" alt="Full-length Festival Lestari page with agenda, articles, videos and gallery" width="750" height="2040" loading="lazy" data-zoom>
+        </div>
+      </div>
+    </article>
+
+    <article class="case snap page" style="--tint:#D5E0D0">
+      <div class="case-main">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#microsite">Microsite</a> <i aria-hidden="true">/</i> <a href="#job-kitabisa" data-job="job-kitabisa">Kitabisa</a> <i aria-hidden="true">/</i> <span>Sedekah Subuh</span></nav>
+        <figure class="device device-narrow"><img src="assets/img/sedekah-device.jpg" alt="Kitabisa Sedekah Subuh microsite on a laptop, green page titled Untukmu dan Untuk Mereka" width="720" height="502" loading="lazy" data-zoom></figure>
+        <h4>The concept</h4>
+        <p>This design for Kitabisa’s Sedekah Subuh pool-funding microsite conveys the idea of giving back and making a difference. Warm colours and graphics create a positive, inviting atmosphere. The clear, concise layout makes the campaign’s purpose and donation packages easy to understand, and the section on the benefits of regular charity encourages users to take part.</p>
+      </div>
+      <div class="case-panel">
+        <div class="scroll-frame" tabindex="0" aria-label="Full page preview. Hover or focus to scroll.">
+          <img src="assets/img/sedekah-full.jpg" alt="Sedekah Subuh page with three donation packages: 20, 50 and 100 thousand rupiah" width="882" height="1245" loading="lazy" data-zoom>
+        </div>
+      </div>
+    </article>
+
+    <article class="case snap page" style="--tint:#C6A9D4">
+      <div class="case-main">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#microsite">Website</a> <i aria-hidden="true">/</i> <span>Alquw</span></nav>
+        <figure class="device"><img src="assets/img/alquw-device.jpg" alt="Alquw natural care store on laptop and phone, purple header and product category cards" width="990" height="502" loading="lazy" data-zoom></figure>
+        <h4>The concept</h4>
+        <p>The UI for Alquw showcases its natural care products through a clean, minimalist layout. Light colours and natural imagery create a calming atmosphere. Clear navigation, well-organized categories and customer testimonials build trust, and the content and design give the brand a more premium look.</p>
+      </div>
+      <div class="case-panel">
+        <div class="scroll-frame" tabindex="0" aria-label="Full page preview. Hover or focus to scroll.">
+          <img src="assets/img/alquw-full.jpg" alt="Full-length Alquw home page with best sellers, why choose Alquw and testimonials" width="753" height="1404" loading="lazy" data-zoom>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="sub" id="dashboard">
+    <h3 class="sub-title visually-hidden">Dashboard</h3>
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#dashboard">Dashboard</a> <i aria-hidden="true">/</i> <span>Naturelearn</span></nav>
+        <h4>Brand</h4>
+        <p><em>UI exploration for Naturelearn (personal project). An e-learning dashboard.</em></p>
+        <h4>The concept</h4>
+        <p>The UI for Naturelearn conveys its focus on environmental education through an appealing, engaging interface. Clear navigation, well-organized content and personalized recommendations make it easy to explore and learn about environmental topics. The visual approach is organic and relatable to the audience, following the campaign mood and the influencer.</p>
+      </div>
+      <figure class="feature-media soft"><img src="assets/img/naturelearn.jpg" alt="Naturelearn dark dashboard on a tablet with lesson progress, class recommendations on coral reefs and a forest banner" width="1176" height="885" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+
+  <!-- Game & app -->
+  <div class="sub" id="game-app">
+    <h3 class="sub-title visually-hidden">Game &amp; app</h3>
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#game-app">Game</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">KG Media</a></nav>
+        <h4>The concept</h4>
+        <p>KG Media’s gamification product: a range of mobile mini-games aligned with ongoing and upcoming marketing campaigns. They educate, entertain and actively support those initiatives, creating deeper engagement and amplifying each campaign’s impact.</p>
+      </div>
+      <figure class="feature-media"><img src="assets/img/games.jpg" alt="Grid of mobile mini-game screens: Ramadhan Mudik, Family Treasure Walk, Bilik Suara, Catch the Letter and quizzes" width="1328" height="869" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#game-app">Mobile App</a> <i aria-hidden="true">/</i> <span>Hellopetty</span></nav>
+        <h4>Brand</h4>
+        <p><em>Hellopetty (team assignment project). A healthcare app for pets.</em></p>
+        <h4>The concept</h4>
+        <p>A healthcare app for pets. This user-centered design was made with empathy and deep research, plus team brainstorming and design sessions. Clean, cute illustrations support the interface for its millennial target users.</p>
+        <p><a class="text-link" href="https://bit.ly/studycasef" target="_blank" rel="noopener">Read the full case study</a></p>
+      </div>
+      <figure class="feature-media soft"><img src="assets/img/hellopetty.jpg" alt="Four Hellopetty app screens in purple: login with a shiba illustration, home, splash and articles" width="1275" height="780" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+
+  <!-- Widget -->
+  <div class="sub" id="widget">
+    <h3 class="sub-title visually-hidden">Widget</h3>
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#widget">Widget</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas.com</a></nav>
+      <figure><img src="assets/img/widgets.jpg" alt="Kompas.com widgets: Jernih Memilih Aspirasi Anak Bangsa, Tentukan Pilihanmu election countdown, Otomotif Nasional 2024 and Hyundai GIIAS 2023" width="1923" height="915" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#widget">Ads placement</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">KG Media</a></nav>
+      <div class="pair">
+        <div>
+          <figure><img src="assets/img/ads-native.jpg" alt="Two native ad layouts styled as short articles titled Cowok kok nangis, one with a photo and one with a Tokopedia promo" width="980" height="663" loading="lazy" data-zoom></figure>
+          <h4>The concept</h4>
+          <p>Skimming is one way people get fast, up-to-date information. Placing ads that blend in as <strong><em>“little content”</em></strong> with a particular layout can reduce the use of ad blocking, and has a better chance of being read along with the article.</p>
+        </div>
+        <div>
+          <figure><img src="assets/img/ads-peel.jpg" alt="Peeling Xpand ad on Kompas.com: a corner peel revealing an expanded Indomie Ramen Series banner" width="573" height="663" loading="lazy" data-zoom></figure>
+          <h4>The concept</h4>
+          <p>Peek-a-boo interactive ads grab attention with a peeling animation and an expanding banner that shows more from the brand. This interactive product, <strong><em>“Peeling Xpand”</em></strong>, increases the time audiences spend with the ad.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#ui"><b>UI Design</b></a> <i aria-hidden="true">/</i> <a href="#widget">Interactive content</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas.com</a> <i aria-hidden="true">/</i> <span>Independence Day</span></nav>
+        <h4>Brand</h4>
+        <p>Kompas.com <em>(digital media)</em></p>
+        <h4>The concept</h4>
+        <p><em>Tap Stories</em> is a visual feature on Kompas.com that uses interactive graphics, videos and quizzes to engage readers. This Independence Day series highlights celebrations in other countries with vibrant visuals, videos and a mini poll, making it easy and enjoyable to explore and stay with more Kompas.com content.</p>
+      </div>
+      <figure class="feature-media"><img src="assets/img/tapstories.jpg" alt="Tap Stories screens with a white glove mascot travelling to Big Ben, Korea, the Statue of Liberty and the Eiffel Tower for 17 Agustus" width="1328" height="869" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+</section>
+
+<!-- ============ BRANDING & PROMOTIONAL ============ -->
+<section class="chapter" id="branding" aria-labelledby="br-title">
+  <header class="chapter-head wrap snap page">
+    <h2 id="br-title">Branding &amp; Promotional Design</h2>
+    <p>Advertising, social media and presentations.</p>
+    <ul class="chapter-links"><li><a href="#advertising">Advertising</a></li><li><a href="#social">Social media</a></li><li><a href="#presentation">Presentation</a></li></ul>
+  </header>
+
+  <div class="sub" id="advertising">
+    <h3 class="sub-title visually-hidden">Advertising</h3>
+
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#advertising">Advertising</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas Group</a></nav>
+      <figure><img src="assets/img/ads-kg.jpg" alt="Kompas Group ad collection: Menuju Pilpres 2024 banner, Kapal Api, BRI debit and credit card, Slide Story, VCBL, onsite launching and X-Plore" width="1902" height="948" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#advertising">Advertising</a> <i aria-hidden="true">/</i> <a href="#job-kitabisa" data-job="job-kitabisa">Kitabisa</a></nav>
+        <h4>Brand</h4>
+        <p>Kitabisa <em>(fintech startup, crowdfunding)</em></p>
+        <h4>The concept</h4>
+        <p>The ad visuals take a more organic, relatable approach. For influencer campaigns, adding the influencer’s photo makes the ads more trustworthy to the audience. The tone follows the campaign mood and the influencer.</p>
+      </div>
+      <figure class="feature-media"><img src="assets/img/ads-kitabisa.jpg" alt="Kitabisa campaign ads: UNHCR food for refugees, mushola renovation, waqf with a religious figure, winter refugees and medical fundraisers" width="1287" height="945" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#advertising">Advertising</a> <i aria-hidden="true">/</i> <a href="#job-foodia" data-job="job-foodia">Foodia, part of Pawoon Group</a></nav>
+      <figure><img src="assets/img/ads-foodia.jpg" alt="Foodia #SelaluAda campaign: delivery truck, fresh ingredients, balanced nutrition, rainy season umbrella and Foodia Point vouchers" width="1922" height="801" loading="lazy" data-zoom></figure>
+      <p class="gallery-text"><strong>#SelaluAda</strong> is a campaign highlighting how accessible the product is through the app. Rain or shine, even amid the challenges of COVID, Foodia is committed to being there, so whatever you need, whenever you need it, is always within reach.</p>
+    </article>
+
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#advertising">Advertising</a> <i aria-hidden="true">/</i> <a href="#job-99robots" data-job="job-99robots">99 Robots LLC’s clients</a></nav>
+      <figure><img src="assets/img/ads-99robots.jpg" alt="Ads for 99 Robots clients: KPI guide, HR Partner software, Ahrefs pixel-art SEO, Curls Blueberry Bliss, Mala Collective sale and Epic Con replay" width="1977" height="786" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#advertising">Advertising</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas.com</a></nav>
+        <h4>Brand</h4>
+        <p>Kompas.com <em>(digital media)</em></p>
+        <h4>The concept</h4>
+        <p><em>Slide Story</em> is a visual content feature placed at the end of every Kompas.com article. Simple, swipeable slides grab readers’ attention and encourage them to keep reading and explore the site, keeping them interested and engaged longer on the page.</p>
+      </div>
+      <figure class="feature-media"><img src="assets/img/slidestory.jpg" alt="Slide Story covers on topics like damaged roads, lemongrass tea, deposits, cholesterol, reading literacy and insurance" width="1328" height="869" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+
+  <div class="sub" id="social">
+    <h3 class="sub-title visually-hidden">Social media</h3>
+
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#social">Social Media</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas Group</a></nav>
+        <h4>Brand</h4>
+        <ul class="plain">
+          <li>Kompas.com x Bank Jago</li><li>Bobo x AIA</li><li>National Geographic Indonesia x YKAN</li>
+          <li>Nova x JTrust Bank</li><li>Parapuan x Pantene</li><li>InfoKomputer x HP, and more</li>
+        </ul>
+        <h4>The concept</h4>
+        <p>Each design was made specifically for its campaign and adapted for Kompas Group’s social media.</p>
+      </div>
+      <figure class="feature-media"><img src="assets/img/social-kg.jpg" alt="Twelve Kompas Group social posts: Bobo, InfoKomputer data breach, HP Zbook, Pantene, Pesut Mahakam, Nova and Gen Z stereotypes" width="1143" height="932" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#social">Social Media</a> <i aria-hidden="true">/</i> <a href="#job-pawoon" data-job="job-pawoon">Pawoon</a></nav>
+      <figure class="square"><img src="assets/img/social-pawoon.jpg" alt="Nine orange Pawoon Instagram posts: Bisa Buat Apa Saja, Open API, live talk, crisis tips, Imlek promo, starter pack, giveaway and Idul Fitri" width="858" height="858" loading="lazy" data-zoom></figure>
+    </article>
+
+    <article class="feature wrap snap page">
+      <div class="feature-text">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#social">Social Media</a> <i aria-hidden="true">/</i> <a href="#job-99robots" data-job="job-99robots">99 Robots LLC’s clients</a></nav>
+        <h4>Brand</h4>
+        <ul class="plain">
+          <li>Ampfluence</li><li>videoproof.io</li><li>malacollective</li><li>Curls</li>
+          <li>Triberr</li><li>Ad Angels</li><li>Podcasts, and more</li>
+        </ul>
+        <h4>The concept</h4>
+        <p>Each design was made specifically for its brand and campaign. Some brands had no brand guideline, so through a KYC (Know Your Client) process each one was translated into a design with its own character.</p>
+      </div>
+      <figure class="feature-media"><img src="assets/img/social-99robots.jpg" alt="Instagram profile grids designed for several 99 Robots clients" width="1328" height="896" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+
+  <div class="sub" id="presentation">
+    <h3 class="sub-title visually-hidden">Presentation</h3>
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#presentation">Company Profile</a> <i aria-hidden="true">/</i> <a href="#job-pawoon" data-job="job-pawoon">Pawoon</a></nav>
+      <figure><img src="assets/img/deck-pawoon.jpg" alt="Pawoon company profile slides in orange and teal: about, team, ecosystem, pricing, integrations and thank you" width="1968" height="882" loading="lazy" data-zoom></figure>
+    </article>
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#presentation">Company Profile</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas Group</a></nav>
+      <figure><img src="assets/img/deck-kg.jpg" alt="Kompas Group media profile 2024–2025 slides with a tower photo, Lestari, Rumah Pemilu and CEO Forum" width="1968" height="882" loading="lazy" data-zoom></figure>
+    </article>
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#branding"><b>Branding &amp; Promotion</b></a> <i aria-hidden="true">/</i> <a href="#presentation">Deck</a> <i aria-hidden="true">/</i> <a href="#job-kompas" data-job="job-kompas">Kompas.com</a></nav>
+      <figure><img src="assets/img/deck-kompas.jpg" alt="Kompas.com blue and orange campaign deck: Tenang Aja, KOL and media aggregator campaign, audience insight" width="1968" height="882" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+</section>
+
+<!-- ============ OTHERS ============ -->
+<section class="chapter" id="others" aria-labelledby="ot-title">
+  <header class="chapter-head wrap snap page">
+    <h2 id="ot-title">Others</h2>
+    <p>3D, illustration, photography and video.</p>
+    <ul class="chapter-links"><li><a href="#illustration">3D &amp; illustration</a></li><li><a href="#photo-video">Photo &amp; video</a></li></ul>
+  </header>
+
+  <div class="sub" id="illustration">
+    <h3 class="sub-title visually-hidden">3D &amp; illustration</h3>
+    <article class="gallery wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#others"><b>Others</b></a> <i aria-hidden="true">/</i> <a href="#illustration">3D &amp; Illustration</a></nav>
+      <figure><img src="assets/img/illustration.jpg" alt="Illustrations: a wedang tahu street cart, 3D soto bowl, a duck on sand dunes, santri in a dorm, a boy offering a coconut, and a hedgehog kayaking" width="1968" height="909" loading="lazy" data-zoom></figure>
+    </article>
+  </div>
+
+  <div class="sub" id="photo-video">
+    <h3 class="sub-title visually-hidden">Photo &amp; video</h3>
+    <article class="photo-block wrap snap page">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#others"><b>Others</b></a> <i aria-hidden="true">/</i> <a href="#photo-video">Photo &amp; video</a></nav>
+      <figure><img src="assets/img/photo.jpg" alt="Photography: an elderly woman portrait, underwater coral and a scuba diver, a mangrove planting team, Himalayan salt product shots and two women lit by firelight" width="1498" height="846" loading="lazy" data-zoom></figure>
+      <aside class="qr-card">
+        <p><strong>Scan the code</strong> or open the link below <strong>to see my video and motion graphic</strong> work. Enjoy!</p>
+        <img src="assets/img/qr.jpg" alt="QR code linking to the video and motion graphic reel" width="654" height="630" loading="lazy">
+        <a class="text-link" href="https://bit.ly/videonmotion" target="_blank" rel="noopener">bit.ly/videonmotion</a>
+      </aside>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact snap" id="contact" aria-labelledby="contact-title">
+  <span class="deco deco-d" aria-hidden="true"></span>
+  <div class="contact-sphere">
+    <h2 id="contact-title">Don’t miss the chance to collaborate!</h2>
+    <p class="reach">Reach me through:</p>
+    <p class="reach-links">
+      <a href="tel:+628118607996">+62 811 8607 996</a>
+      <a href="mailto:faridarizkirambe@gmail.com">faridarizkirambe@gmail.com</a>
+    </p>
+    <a class="btn btn-light" href="mailto:faridarizkirambe@gmail.com?subject=Let%E2%80%99s%20work%20together">Email Farida</a>
+  </div>
+  <div class="thanks" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <defs><path id="thanksArc" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs>
+      <text><textPath href="#thanksArc" startOffset="3%">– Thank you! –</textPath></text>
+    </svg>
+    <span class="thanks-ball"></span>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Farida Rizki, Portfolio 2019–2024, Jakarta, Indonesia</p>
+  <a href="#top">Back to top</a>
+</footer>
+
+<dialog id="lightbox" aria-label="Image viewer">
+  <button class="lb-close" type="button" aria-label="Close image">Close</button>
+  <img alt="">
+</dialog>
+
+<script src="assets/js/matter.min.js"></script>
+<script src="assets/js/hero.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
